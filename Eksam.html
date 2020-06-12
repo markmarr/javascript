@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="utf8" />
+    <title>Programmeerimine 1</title>
+    <link rel="stylesheet" type="text/css" href="eksam.css">
+<script src="eksam.js" defer></script>
+</head>
+<body>
+    <header style="padding: 4px">
+        <h1>Programmeerimine 1 Eksam</h1>
+        <h3>Markus Marrandi</h3>
+        <p>12/06/2020</p>
+    </header>
+    <div id="head2" class="border">
+        <h2>Arvutamismäng</h2>
+        <b>Lahenda tehted õigesti piiratud aja jooksul.</b>
+    </div>
+    <div style="overflow: hidden">
+        <canvas id="canvas" width="1000" height="1000"></canvas>
+        <div id="panel">
+            <div>
+                <!-- answer -->
+                <label for="answer"><b>Vastus:</b></label><br />
+                <input type="text" name="answer" id="answer" placeholder="Enter"></input>
+            </div>
+            <div>
+                <!-- history -->
+            </div>
+            <button name="start" id="startstop" onclick="check()"><b>Alusta</b></button>
+        </div>
+    </div>
+    <h2 id="notification"></h2>
+    <table id="history">
+        <tr>
+            <th>Tehe</th>
+            <th>Sisestus</th>
+            <th>Tulemus</th>
+        </tr>
+    </table>
+
+</body>
+
+
+</html>
